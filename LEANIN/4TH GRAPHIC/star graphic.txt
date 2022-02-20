@@ -1,0 +1,12 @@
+STAR GRAPHIC-
+
+
+import turtle
+tr = turtle.Turtle()
+tr.fillcolor('purple')
+tr.begin_fill()
+for i in range(5):
+    tr.forward(250)
+    tr.left(144)
+tr.end_fill()
+turtle.done()
