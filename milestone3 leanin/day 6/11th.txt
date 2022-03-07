@@ -1,0 +1,13 @@
+11th:
+class Solution(object):
+    def checkIfPangram(self, sentence):
+        """
+        :type sentence: str
+        :rtype: bool
+        """
+        if len(sentence)<26:
+            return False
+        if len(Counter(sentence).keys())<26:
+            return False
+        else:
+            return True
