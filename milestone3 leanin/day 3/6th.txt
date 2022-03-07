@@ -1,0 +1,14 @@
+6th:
+class Solution(object):
+    def sumOfUnique(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        ans=[]
+        for i in nums:
+            if nums.count(i)==1:
+                ans.append(i)
+                
+        
+        return sum(ans)
