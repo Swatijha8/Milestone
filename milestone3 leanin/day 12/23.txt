@@ -1,0 +1,18 @@
+23rd:
+
+class Solution:
+    def prefixCount(self, words: List[str], pref: str) -> int:
+        pref_length = len(pref)
+        ans_cnt = 0
+        for ele in words:
+            if len(ele) < pref_length:
+                continue
+            else:
+                if self.compare_str(ele[0: pref_length], pref):
+                    ans_cnt += 1
+                else:
+                    pass
+        return ans_cnt
+
+    def compare_str(self, word_pref: str, pref: str) -> bool:
+        return (word_pref == pref)
